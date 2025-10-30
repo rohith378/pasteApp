@@ -3,9 +3,10 @@
   "outputDirectory": "paste-app/dist",
   "framework": "vite",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/paste-app/dist/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+
 
 
 
