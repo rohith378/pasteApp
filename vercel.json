@@ -1,10 +1,8 @@
 {
-  "buildCommand": "cd paste-app && npm install && npm run build",
-  "outputDirectory": "paste-app/dist",
-  "framework": "vite",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/paste-app/index.html" }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
+
 
 
