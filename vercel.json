@@ -6,11 +6,11 @@
       "use": "@vercel/static-build"
     }
   ],
+  "buildCommand": "cd paste-app && npm install && npm run build",
+  "outputDirectory": "paste-app/dist",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/paste-app/index.html"
-    }
+    { "src": "/(.*)", "dest": "paste-app/dist/$1" }
   ]
 }
+
 
