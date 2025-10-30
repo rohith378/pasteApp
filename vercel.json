@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "paste-app/package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
   "buildCommand": "cd paste-app && npm install && npm run build",
   "outputDirectory": "paste-app/dist",
-  "routes": [
-    { "src": "/(.*)", "dest": "paste-app/dist/$1" }
-  ]
+  "framework": "vite"
 }
+
 
 
