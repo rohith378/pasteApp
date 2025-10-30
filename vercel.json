@@ -2,9 +2,10 @@
   "buildCommand": "cd paste-app && npm install && npm run build",
   "outputDirectory": "paste-app/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/paste-app/index.html" }
   ]
 }
+
 
 
 
