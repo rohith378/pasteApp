@@ -1,8 +1,22 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "paste-app/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "paste-app/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "paste-app/dist/index.html"
+    }
   ]
 }
+
 
 
 
